@@ -1,0 +1,165 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background-color: #fff;
+}
+
+.parent1 div {
+    width: 50px;
+    height: 50px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border: 5px solid #e91e63;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    position: relative;
+    animation-name: loop-one;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+.parent1 div::before {
+    content: "";
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    border: 5px solid #2196f3;
+    border-radius: 50%;
+    border-top-color: transparent;
+}
+
+.parent1 div::after {
+    content: "";
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    border: 5px solid #ff9800;
+    border-radius: 50%;
+    border-bottom-color: transparent;
+}
+
+.parent1 div:hover {
+    animation-play-state: paused;
+}
+
+@keyframes loop-one {
+    to {
+        transform: rotate(1turn);
+    }
+}
+
+.parent2 {
+    width: 50px;
+    height: 50px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* position: relative; */
+}
+
+/* .parent2 .one,
+.parent2 .two,
+.parent2 .three {
+    animation-play-state: paused;
+} */
+
+.parent2 .one {
+    width: 50px;
+    height: 50px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid #2196f3;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    position: absolute;
+    animation-name: loop-one2;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.parent2 .two {
+    width: 65px;
+    height: 65px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid #ff9800;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    position: absolute;
+    animation-name: loop-one2;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.parent2 .three {
+    width: 80px;
+    height: 80px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid #000000;
+    border-radius: 50%;
+    border-bottom-color: transparent;
+    position: absolute;
+    animation-name: loop-one2;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.one:hover,
+.two:hover,
+.three:hover {
+    animation-play-state: running;
+}
+
+
+@keyframes loop-one2 {
+    from {
+        transform: rotate(0turn);
+    }
+
+    to {
+        transform: rotate(1turn);
+    }
+}
+
+
+span {
+    width: 50px;
+    height: 50px;
+    margin: 20px auto;
+    border-radius: 50%;
+    background-color: #ddd;
+    border: 5px solid black;
+    border-bottom-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: loop;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(0.5, -0.25, 0.42, 1.18);
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+    
+}
+
+@keyframes loop {
+    to {
+        transform: rotate(1turn);
+    }
+}

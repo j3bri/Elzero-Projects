@@ -1,0 +1,28 @@
+/* ass */
+
+/* div .child .title {
+    color: red;
+}
+
+div span {
+    color: blue;
+}
+
+div p,
+.title {
+    color: green;
+} */
+
+/* ass 2 */
+
+.one,
+.two,
+.three,
+.four {
+    background-color: red;
+    width: fit-content;
+    max-width: 400px;
+    max-height: 40px;
+    margin: 5px 0;
+    overflow: hidden;
+}

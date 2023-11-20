@@ -1,0 +1,259 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+.parent1 .grid {
+    margin: 20px auto;
+    background-color: #ddd;
+    padding: 20px;
+    width: 800px;
+    height: 400px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 40px 1fr;
+    gap: 20px;
+}
+
+.parent1 .grid div {
+    background-color: #607d8b;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.parent1 .grid ::after {
+    content: "Element";
+}
+
+.parent2 .layout {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 50px 1fr 50px;
+    grid-template-areas:
+        "head head head head head"
+        "sec sec sec sec side"
+        "foot foot foot foot foot";
+}
+
+header {
+    grid-area: head;
+    color: white;
+    background-color: #03a9f4;
+    position: relative;
+}
+
+header::after {
+    content: "Header";
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+
+section {
+    grid-area: sec;
+    color: white;
+    background-color: #ff5722;
+    position: relative;
+}
+
+section::after {
+    content: "Section";
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+
+aside {
+    grid-area: side;
+    color: white;
+    background-color: #607d8b;
+    position: relative;
+}
+
+aside::after {
+    content: "Aside";
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+
+footer {
+    grid-area: foot;
+    color: white;
+    background-color: #009688;
+    position: relative;
+}
+
+footer::after {
+    content: "Footer";
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+
+.parent3 .grid {
+    background-color: #ddd;
+    padding: 20px;
+    width: 800px;
+    height: 400px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: auto 1fr 1fr auto;
+    grid-template-rows: 1fr auto;
+    gap: 20px;
+
+}
+
+.parent3 .grid div {
+    color: white;
+    background-color: #403f3f;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.parent4 .grid {
+    background-color: #ddd;
+    padding: 20px;
+    width: 800px;
+    height: 400px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas:
+        "one one one one one one one one one one"
+        "two two two two two two two three three three"
+        "four four four five five five five five five five"
+        "six six six five five five five five five five"
+        "seven seven seven five five five five five five five"
+        "foot foot foot foot foot foot foot foot foot foot";
+    gap: 10px;
+}
+
+.parent4 .grid div {
+    color: white;
+    background-color: #2196f3;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.parent4 .grid .one {
+    grid-area: foot;
+}
+
+.parent4 .grid .two {
+    grid-area: two;
+}
+
+.parent4 .grid .three {
+    grid-area: three;
+}
+
+.parent4 .grid .four {
+    grid-area: four;
+}
+
+.parent4 .grid .five {
+    grid-area: five;
+}
+
+.parent4 .grid .six {
+    grid-area: six;
+}
+
+.parent4 .grid .seven {
+    grid-area: seven;
+}
+
+.parent4 .grid .eight {
+    grid-area: one;
+}
+
+.parent5 .grid {
+    background-color: #ddd;
+    padding: 20px;
+    width: 800px;
+    height: 400px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
+    gap: 10px;
+    /* justify-content: space-between; */
+    align-content: space-between;
+}
+
+.parent5 .grid div {
+    color: white;
+    background-color: #e91e63;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.describe {
+    color: #b2b2b2;
+}
+
+.parent6 {
+    height: 150vh;
+    margin: 20px auto;
+    background-color: #ddd;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 25% 22.5% 22.5% 15%;
+    gap: 15px;
+}
+
+.parent6 div {
+    color: black;
+    background-color: white;
+    border-bottom: 3px solid #fd3e00;
+    padding: 15px;
+}
+
+.parent6 .osama-mohamed {
+    grid-column: span 2;
+}
+
+.parent6 .ahemd-sayed {
+    grid-column: span 1;
+}
+
+.parent6 .shady-nabil {
+    grid-row: span 3;
+    background-color: black;
+    color: white;
+}
+
+.parent6 .mohamed-ibrahim {
+    grid-row: span 2;
+}
+
+.parent6 .mahmoud-mohamed {
+    grid-column: span 2;
+    background-color: black;
+    color: white;
+}
+
+.parent6 .ezz-eldin {
+    grid-column: span 2;
+}
+
+.parent6 .ibrahim-sayed {
+    background-color: black;
+    color: white;
+}

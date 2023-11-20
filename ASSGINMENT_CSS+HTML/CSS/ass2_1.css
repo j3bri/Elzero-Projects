@@ -1,0 +1,80 @@
+div {
+    width: 400px;
+    height: 400px;
+    background-image: url(css-assignment-5-8.png)
+}
+
+/* ass2-1 */
+
+
+.assign-1-2-shape-1 {
+
+    background-repeat: no-repeat;
+}
+
+.assign-1-2-shape-2 {
+
+    background-repeat: repeat-y;
+}
+
+.assign-1-2-shape-3 {
+
+    background-repeat: repeat;
+}
+
+.assign-1-2-shape-4 {
+
+    background-repeat: repeat-x;
+}
+
+/* ass2-2 */
+
+.assign-2-2-shape-1 {
+
+    background-repeat: no-repeat;
+}
+
+.assign-2-2-shape-2 {
+
+    background-repeat: repeat-y;
+    background-position: right;
+}
+
+.assign-2-2-shape-3 {
+
+    background-repeat: repeat-x;
+    background-position: bottom;
+}
+
+.assign-2-2-shape-4 {
+
+    background-repeat: repeat;
+}
+
+/* ass2-3 */
+
+.assign-3-2-shape-1 {
+    background-repeat: no-repeat;
+    background-size: 80%;
+}
+
+.assign-3-2-shape-2 {
+
+    background-repeat: repeat-y;
+    background-position: right;
+    background-size: 80%;
+}
+
+.assign-3-2-shape-3 {
+
+    background-repeat: repeat-x;
+    background-position: bottom;
+    background-size: 80%;
+}
+
+.assign-3-2-shape-4 {
+
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: bottom right;
+}

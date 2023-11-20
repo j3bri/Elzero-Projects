@@ -1,0 +1,76 @@
+.parent {
+    margin-bottom: 20px;
+    overflow: hidden;
+    counter-increment: count-members;
+}
+
+.one::before {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    left: -18px;
+    top: 50%;
+    margin-top: -10px;
+    border: 10px solid;
+    border-color: transparent #009688 transparent transparent;
+
+}
+
+
+.one {
+    background-color: #ccc;
+    padding: 10px;
+    width: 600px;
+    float: left;
+    position: relative;
+}
+
+
+.one::after {
+    content: counter(count-members);
+    position: absolute;
+    background-color: #009688;
+    color: white;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    font-weight: bold;
+    right: -10px;
+    top: 50%;
+    margin-top: -10px;
+    /* content: "";
+    position: absolute;
+    height: 100%;
+    width: 6px;
+    right: -10px;
+    top: 0px;
+    background-color: #009688; */
+}
+
+
+.user {
+    background-color: #ccc;
+    width: 50px;
+    margin-right: 20px;
+    padding: 10px;
+    height: 55.5px;
+    float: left;
+    font-size: 50px;
+    text-align: center;
+}
+
+hr {
+    margin: 20px 0;
+    display: none;
+}
+
+
+.one .pipeline {
+    position: absolute;
+    height: 100%;
+    width: 6px;
+    right: -10px;
+    top: 0px;
+    background-color: #009688;
+}

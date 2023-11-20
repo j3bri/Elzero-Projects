@@ -1,0 +1,214 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.one {
+    margin: 20px auto;
+
+}
+
+.one div::before {
+    content: "Element";
+    position: absolute;
+    top: 42%;
+    left: 29%;
+    font-size: 19px;
+}
+
+.one div {
+    display: inline-block;
+    background-color: #ddd;
+    font-weight: bold;
+    padding: 25px;
+    margin: 20px;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    box-shadow: -7px -8px 0px 0px #e91e63, 7px 8px 0px 0px #2196f3;
+    border: 3.5px solid black;
+    position: relative;
+    counter-increment: asd;
+}
+
+.one div::after {
+    content: counter(asd);
+    position: absolute;
+    top: -19px;
+    right: 59px;
+    font-weight: bold;
+    font-size: 18px;
+    color: white;
+    background-color: black;
+    width: 18px;
+    height: 18px;
+    padding: 7px;
+    border-radius: 20px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+
+
+
+
+.two {
+    margin: 20px auto;
+    background-color: #eee;
+    width: 100px;
+    height: 100px;
+
+    border-top-left-radius: 10px 20px;
+    -webkit-border-top-left-radius: 10px 20px;
+    -moz-border-top-left-radius: 10px 20px;
+    -ms-border-top-left-radius: 10px 20px;
+    -o-border-top-left-radius: 10px 20px;
+
+    border-top-right-radius: 49px 59px;
+    -webkit-border-top-right-radius: 49px 59px;
+    -moz-border-top-right-radius: 49px 59px;
+    -ms-border-top-right-radius: 49px 59px;
+    -o-border-top-right-radius: 49px 59px;
+
+    border-bottom-left-radius: 50px 52px;
+    -webkit-border-bottom-left-radius: 50px 52px;
+    -moz-border-bottom-left-radius: 50px 52px;
+    -ms-border-bottom-left-radius: 50px 52px;
+    -o-border-bottom-left-radius: 50px 52px;
+
+    border-bottom-right-radius: 10px 20px;
+    -webkit-border-bottom-right-radius: 10px 20px;
+    -moz-border-bottom-right-radius: 10px 20px;
+    -ms-border-bottom-right-radius: 10px 20px;
+    -o-border-bottom-right-radius: 10px 20px;
+
+    box-shadow: 0px 0px 5px 1px #3a3939 inset;
+}
+
+
+
+
+
+
+.parent {
+    width: 550px;
+    overflow: hidden;
+    margin: 20px auto;
+    border: 1px solid #fff;
+}
+
+.pro,
+.basic {
+    width: 220px;
+    height: 240px;
+    float: left;
+    background-color: #eee;
+    position: relative;
+
+}
+
+.pro {
+    margin-left: 60px;
+}
+
+
+.c1,
+.c3 {
+    background-color: #03a9f4;
+    color: white;
+    text-align: center;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    position: absolute;
+    top: 14px;
+    left: 8px;
+}
+
+
+.c1 {
+    padding: 7px 82.5px;
+}
+
+.c1::after {
+    content: "";
+    width: 1px;
+    height: 240px;
+    background-color: #03a9f4;
+    position: absolute;
+    top: -14px;
+    right: -39px;
+
+}
+
+.c3::before {
+    content: "Or";
+    width: 15px;
+    height: 15px;
+    color: white;
+    background-color: #03a9f4;
+    position: absolute;
+    top: 86px;
+    left: -54px;
+    padding: 10px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.c3 {
+    padding: 7px 89.5px;
+}
+
+.c2,
+.c4 {
+    position: relative;
+}
+
+.c2::before,
+.c4::before {
+    /* content: "Free"; */
+    content: "";
+    width: 50px;
+    height: 50px;
+    background-color: #ddd;
+    position: absolute;
+    top: 69px;
+    left: 35px;
+    padding: 50px;
+    /* text-align: center;
+    font-size: 40px; */
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.c2::after {
+    content: "Free";
+    font-size: 25px;
+    color: #000;
+    position: absolute;
+    top: 127px;
+    left: 84px;
+}
+
+.c4::after {
+    content: "30$";
+    font-size: 25px;
+    color: #000;
+    position: absolute;
+    top: 127px;
+    left: 91px;
+}
